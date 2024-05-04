@@ -1,0 +1,143 @@
+.payment{
+    position: relative;
+}
+
+.payment::before{
+    content: ' ';
+    position: absolute;
+    top: calc(100%);
+    background-color: rgb(173, 168, 167);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.payment::after{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    width: 0px;
+    height: 5px;
+    border-radius: 10px;
+    animation-duration: 13s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-name: payments;
+}
+
+@keyframes payments{
+    100%{
+        width: 30%;
+        background-color:#97ebbe;
+    }
+}
+
+.late{
+    position: relative;
+}
+
+.late::before{
+    content: ' ';
+    position: absolute;
+    top: calc(100%);
+    background-color: rgb(173, 168, 167);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.late::after{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    width: 0px;
+    height: 5px;
+    border-radius: 10px;
+    animation-duration: 13s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-name: lates;
+}
+
+@keyframes lates{
+    100%{
+        width: 60%;
+        background-color: #8CD3DB;
+    }
+}
+
+.staff{
+    position: relative;
+}
+
+.staff::before{
+    content: ' ';
+    position: absolute;
+    top: calc(100%);
+    background-color: rgb(173, 168, 167);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.staff::after{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    width: 0px;
+    height: 5px;
+    border-radius: 10px;
+    animation-duration: 13s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-name: staffs;
+}
+
+@keyframes staffs{
+    100%{
+        width: 70%;
+        background-color: #E8C7A7;
+    }
+}
+
+.present{
+    position: relative;
+}
+
+.present::before{
+    content: ' ';
+    position: absolute;
+    top: calc(100%);
+    background-color: rgb(173, 168, 167);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.present::after{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    width: 0px;
+    height: 5px;
+    border-radius: 10px;
+    animation-duration: 13s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-name: presents;
+}
+
+@keyframes presents{
+    100%{
+        width: 80%;
+        background-color: #aface8;
+    }
+}
